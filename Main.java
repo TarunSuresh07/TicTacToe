@@ -2,41 +2,28 @@ import java.util.Scanner;
 import java.util.Random;
 
 /**
- * Main
- * UC7 allows the computer to make a random valid move
- * by reusing slot conversion and validation logic.
+ * TicTacToe
+ * UC8 controls the continuous game loop and alternates
+ * turns until the game ends.
  */
 public class Main {
-    static char[][] board = {
-        {'-', '-', '-'},
-        {'-', '-', '-'},
-        {'-', '-', '-'}
-    };
+    static boolean isHumanTurn = true;
+    static boolean gameOver = false;
 
-    static char computerSymbol = 'O';
     /**
-     * Entry point of the program. Triggers the computer move.
+     * Entry point of the program. Demonstrates the structure
+     * of a continuous game loop.
      */
     public static void main(String[] args) {
-        computerMove();
-    }
-    /**
-     * Generates random slot values until a valid move is found,
-     * then places the computer symbol on the board.
-     */
-    static void computerMove() {
-        Random rand = new Random();
-
-        while (true) {
-            int slot = rand.nextInt(9) + 1;
-
-            int row = (slot - 1) / 3;
-            int col = (slot - 1) % 3;
-
-            if (board[row][col] == '-') {
-                board[row][col] = computerSymbol;
-                break;
+        while (!gameOver) {
+            if (isHumanTurn) {
+                System.out.println("Human Turn");
+            } else {
+                System.out.println("Computer Turn");
             }
+
+            gameOver = true;
+            isHumanTurn = !isHumanTurn;
         }
     }
 }
