@@ -5,7 +5,7 @@ import java.util.Scanner;
 * focuses only on input handling without validation.
 */
 
-public class TicTacToe {
+public class Main {
     /**
     * Entry point of the program. Reads slot input and prints it back.
     * to verify correct user input handling.
