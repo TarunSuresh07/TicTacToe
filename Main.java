@@ -4,8 +4,7 @@ import java.util.Scanner;
  * UC4 converts a user-entered slot number (1–9) into corresponding
  * row and column indices of a 2D array.
  */
-public class TicTacToe {
-
+public class Main {
     /**
      * Entry point of the program. Demonstrates slot-to-index conversion
      * using a sample slot value.
