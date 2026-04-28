@@ -4,8 +4,7 @@ import java.util.Scanner;
  * UC5 validates whether a move is inside the board boundaries
  * and whether the selected cell is empty.
  */
-public class TicTacToe {
-
+public class Main {
     static char[][] board = {
         {'-', '-', '-'},
         {'-', '-', '-'},
