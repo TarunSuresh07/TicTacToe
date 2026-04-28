@@ -6,8 +6,7 @@ import java.util.Random;
 * symbols (X or 0) to the human and computer accordingly.
 */
 
-public class TicTacToe {
-
+public class Main {
     static boolean isHumanTurn;
     static char humanSymbol;
     static char computerSymbol;
@@ -20,7 +19,6 @@ public class TicTacToe {
         tossAndAssignSymbols();
         displayTossResult();
     }
-
     /**
     * Uses random logic to decide the first player and assigns symbols 
     * based on the toss outcome. This method initializes the game state.
